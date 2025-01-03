@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big {
+    width: 600px;
+    /* height: 447px; */
+    height: 28rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.divImg img {
+    width: 302px;
+    height: 100%;
+    /* height: auto; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.secDiv {
+    width: 298px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-right: 28px;
+    /* height: auto; */
+}
+
+.secDiv h3 {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.secDiv h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+.secDiv p {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.price h1{
+   color: hsl(158, 36%, 37%);
+}
+
+.price small{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+
+}
+
+.addtoCart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    height: 47px;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 10px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.addtoCart p{
+    color: hsl(0, 0%, 100%);
+}
+
+.addtoCart:hover{
+    background-color: hsl(159, 91%, 9%);
+}
+
+@media screen and (max-width: 375px) {
+    .big {
+        flex-direction: column; 
+        width: 90%; 
+        height: auto; 
+      }
+    
+      .divImg img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 10px 10px 0 0; 
+      }
+    
+      .secDiv {
+        width: 100%; 
+        margin-right: 0; 
+        padding: 20px; 
+      }
+  }
